@@ -21,8 +21,7 @@ You can use this module in your Terraform configuration like this:
 ## Example: labels
 ```hcl
 module "labels" {
-  source      = "SyncArcs/labels/google"
-  version     = "1.0.0"
+  source      ="git::https://github.com/SyncArcs/terraform-google-labels.git?ref=v1.0.0"
   name        = "app"
   environment = "test"
   label_order = ["name", "environment"]
